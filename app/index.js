@@ -1,12 +1,11 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { ActivityIndicator, Text, View } from 'react-native';
 
-export default function Home() {
+export default function StartPage() {
   return (
-   <View className="flex-1 items-center justify-center bg-red">
-      <Text className="font-bold tracking-wider">Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View className="flex-1 justify-center items-center">
+      <ActivityIndicator size="large" color="gray" />
     </View>
   );
 }
